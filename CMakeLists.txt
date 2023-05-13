@@ -14,9 +14,12 @@ set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 add_subdirectory(./includes/glfw)
 add_subdirectory(./includes/glad)
 
-add_executable(myApp main.cpp)
+add_executable(myApp src/main.cpp src/lib/logger/Logger.cpp)
 
 target_link_libraries(myApp glad glfw)
+
+# Ajout des fichiers .hpp
+target_include_directories(myApp PRIVATE src/lib/logger/Logger.hpp)
 
 find_package(OpenGL REQUIRED)
 
