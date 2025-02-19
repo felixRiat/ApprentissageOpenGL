@@ -4,4 +4,4 @@
 
 Ce projet à pour but de découvrir le fonctionnement d'OpenGL en c++.
 
-
+Suivi du tutoriel [https://learnopengl.com/book/book_pdf.pdf](https://learnopengl.com/book/book_pdf.pdf)
